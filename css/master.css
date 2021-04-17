@@ -29,18 +29,30 @@
 	max-width: 1000px !important;
 }
 
-.row__about{
-	display: none;
+.row__about, .row__about__mob{
+	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
 	align-items: center;
 }
 
-.row__about > span{
+.row__about__mob{
+	display: none;
+}
+
+.row__about > span, .row__about__mob > span{
 	padding: .25rem .5rem;
 	margin: .25rem 0;
 	border: 1px solid black;
 	min-width: 45%;
+}
+.row__about > a{
+	width: 30%;
+	max-width: 150px;
+	height: auto;
+}
+.row__about > a > img{
+	width: 100%;
 }
 
 
@@ -52,7 +64,7 @@
 	text-align: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 	#menu{
 		display: none;
 		width: 100%;
@@ -67,7 +79,7 @@
 	#about > *{
 		max-width: 100%;
 	}
-	.row__about{
+	.row__about__mob{
 		display: flex;
 	}
 	#history{
