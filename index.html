@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="http://fonts.cdnfonts.com/css/emerald-grey" rel="stylesheet">
+	<link href="http://fonts.cdnfonts.com/css/arcade" rel="stylesheet">
+	<link href="http://fonts.cdnfonts.com/css/renogare-soft" rel="stylesheet">
+	<link rel="stylesheet" href="css/master.css">
+	<title>Zugudu</title>
+</head>
+<body>
+	<div class="w3-bar w3-black">
+		<button class="w3-button " id="menu-toggler" onclick="$('#menu').toggle()">
+			<i class="fas fa-bars"></i>
+		</button>
+		<div id="menu" class="w3-right">
+			<a href="" class="w3-bar-item w3-button w3-hover-red">Головна</a>
+			<a href="" class="w3-bar-item w3-button w3-hover-red">Про мене</a>
+		</div>
+	</div>
+
+	<div class="w3-container w3-center">
+		<h1>Who am I?</h1>
+		<center id="about">
+			<p>I am 18 years old computer geek, my name is Maksym and me from Ukraine. I am good in cybersecurity, programming, protocol developing,  DevOps and team management. I interested in cloud technologies and API developing. So, I learning this right now.</p>
+		</center>
+		<h1>What i know?</h1>
+		<canvas width="1000" height="170" id="history"></canvas>
+		<h1>What i did?</h1>
+		<center id="about">
+			<p>You can find some of my work in my 
+				<a href="https://github.com/Zugudu" target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+					GitHub
+				</a>. 
+				Of couse it only some part of my works. I can't show code of all my works becouse it's production secret :-)
+			</p>
+			<p>However i can show some works themselves</p>
+			<ul class="w3-left-align">
+				<li><a href="https://umanga.tk" target="_blank">uManga</a> - free platform for ukrainian translators. No moderation, no week waiting for translate post.</li>
+				<li>Also uManga's telegram bot <a href="https://t.me/umangaBot" target="_blank">here</a></li>
+			</ul>
+		</center>
+	</div>
+
+
+	<script src="https://kit.fontawesome.com/0ee7e82a02.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+	<script src="js/skillCanvas.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+:root{
+	--mc: #536271;
+	--sc: #d64933;
+	--dc: #3e4c5e;
+	--lc: #f3f5f7;
+}
+
+
+@font-face {
+	font-family: Main;
+	src: url("../font/20289.ttf");
+}
+
+*, #menu > a{
+	font-family: 'Main';
+}
+h1{
+	font-family: 'Arcade Interlaced', sans-serif;
+}
+
+#about > *{
+	font-size: 18px;
+	font-family: 'Renogare Soft', sans-serif;
+	max-width: 1000px;
+}
+
+
+#menu-toggler{
+	display: none;
+	float: right;
+}
+.w3-bar > span:first-child{
+	text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+	#menu{
+		display: none;
+	}
+	#menu > *{
+		display: block;
+		width: 100%;
+	}
+	#menu-toggler{
+		display: block;
+	}
+	#about > *{
+		max-width: 100%;
+	}
+}
