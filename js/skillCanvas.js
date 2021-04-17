@@ -1,5 +1,6 @@
 let can = document.getElementById('history').getContext('2d');
 let x = 0, y = 150;
+let font = "16px Emerald Grey";
 let iKnown = [
 	['C++'], //2013
 	['Cryptography'], //2014
@@ -12,8 +13,7 @@ let iKnown = [
 	['NodeJS', 'MongoDB', 'AngularJS', 'K8S', 'Ansible'], //2021
 ]
 let dx = document.getElementById('history').width/(iKnown.length+1);
-
-can.font = "16px Emerald Grey";
+can.font = font;
 
 function yearLine(){
 	can.moveTo(x+=3, y);
@@ -46,13 +46,15 @@ function yearSkill(index){
 	}
 }
 
-can.moveTo(x, y);
-can.lineTo((x+=35), y);
-can.stroke();
+document.fonts.load('16px Emerald Grey').then(() => {
+	can.moveTo(x, y);
+	can.lineTo((x+=35), y);
+	can.stroke();
 
-for(i=0; i<iKnown.length; i++){
-	yearCircle();
-	yearText(2013+i);
-	yearSkill(i);
-	yearLine();
-}
+	for(i=0; i<iKnown.length; i++){
+		yearCircle();
+		yearText(2013+i);
+		yearSkill(i);
+		yearLine();
+	}
+})
