@@ -9,8 +9,8 @@ let iKnown = [
 	['Linux', 'SQL'], //2017
 	['Assembler', 'AVR', 'HTML/CSS', 'PHP'], //2018
 	['Pure C', 'Docker'], //2019
-	['Python', 'Bottle', 'Flask', 'Django', 'Bootstrap'], //2020
-	['NodeJS', 'MongoDB', 'AngularJS', 'K8S', 'Ansible'], //2021
+	['Python', 'Bottle', 'Flask', 'Django'], //2020
+	['Bootstrap', 'NodeJS', 'MongoDB', 'AngularJS', 'K8S', 'Ansible'], //2021
 ]
 let dx = document.getElementById('history').width/(iKnown.length+1);
 can.font = font;
