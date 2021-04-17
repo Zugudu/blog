@@ -6,7 +6,7 @@ let iKnown = [
 	['Cryptography'], //2014
 	[], //2015
 	['Java'], //2016
-	['Linux'], //2017
+	['Linux', 'SQL'], //2017
 	['Assembler', 'AVR', 'HTML/CSS'], //2018
 	['Pure C', 'Docker'], //2019
 	['Python', 'Bottle', 'Flask', 'Django'], //2020

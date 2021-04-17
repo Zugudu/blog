@@ -10,18 +10,37 @@
 	font-family: Main;
 	src: url("../font/20289.ttf");
 }
+@font-face {
+	font-family: "Emerald Grey";
+	src: url("../font/Emerald\ Grey.woff");
+}
 
 *, #menu > a{
 	font-family: 'Main';
 }
-h1{
-	font-family: 'Arcade Interlaced', sans-serif;
+#about > h1{
+	font-size: 36px;
+	font-family: 'Arcade Interlaced', sans-serif !important;
 }
 
 #about > *{
 	font-size: 18px;
 	font-family: 'Renogare Soft', sans-serif;
-	max-width: 1000px;
+	max-width: 1000px !important;
+}
+
+.row__about{
+	display: none;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.row__about > span{
+	padding: .25rem .5rem;
+	margin: .25rem 0;
+	border: 1px solid black;
+	min-width: 45%;
 }
 
 
@@ -47,5 +66,11 @@ h1{
 	}
 	#about > *{
 		max-width: 100%;
+	}
+	.row__about{
+		display: flex;
+	}
+	#history{
+		display: none;
 	}
 }
