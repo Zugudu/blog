@@ -36,6 +36,7 @@ h1{
 @media screen and (max-width: 600px) {
 	#menu{
 		display: none;
+		width: 100%;
 	}
 	#menu > *{
 		display: block;
