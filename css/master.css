@@ -29,6 +29,19 @@
 	max-width: 1000px !important;
 }
 
+#article > p{
+	font-size: 18px;
+	text-align: justify;
+}
+#article > *{
+	font-family: Main, sans-serif;
+	max-width: 1000px !important;
+}
+
+.w3-code{
+	text-align: left;
+}
+
 .row__about, .row__about__mob{
 	display: flex;
 	justify-content: space-around;
@@ -76,7 +89,7 @@
 	#menu-toggler{
 		display: block;
 	}
-	#about > *{
+	#about > *, #article > *{
 		max-width: 100%;
 	}
 	.row__about__mob{
